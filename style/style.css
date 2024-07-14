@@ -156,6 +156,8 @@ margin-top: 30PX;}
  #contact{
     color: #fefefe; 
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
  }
 #contact div>h3,p{
     text-align: center;
@@ -205,4 +207,35 @@ footer>ul>li>a:hover{
     color: #11101b;
     background-color: #f8b90c;
 
+}
+@media screen and (max-width:576px) {
+    header,.main,.blog{
+        flex-direction: column;
+    }
+    .logo{
+        text-align: center;
+    }
+    .blg{
+        border-radius: 5px;
+
+
+    }
+
+    .mdiv-1{
+        width: 100%;
+    }
+    .mdiv-2{
+        padding-left: 20px;
+        width: 100%;
+    }
+    #contact,header, .nav{
+        text-align: center;
+
+    }
+    #contact>.form{
+        padding-left: 10px;
+    }
+    
+
+    
 }
